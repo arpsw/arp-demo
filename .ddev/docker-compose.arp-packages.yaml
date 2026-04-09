@@ -1,0 +1,4 @@
+services:
+  web:
+    volumes:
+      - "${HOME}/Code/arp-packages:/mnt/arp-packages:cached"

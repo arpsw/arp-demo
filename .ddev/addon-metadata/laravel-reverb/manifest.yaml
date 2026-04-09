@@ -1,0 +1,8 @@
+name: laravel-reverb
+repository: tyler36/ddev-laravel-reverb
+version: "0.1"
+install_date: "2026-04-03T09:47:05+02:00"
+project_files:
+    - config.laravel-reverb.yaml
+global_files: []
+removal_actions: []

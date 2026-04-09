@@ -1,0 +1,12 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Route alias for login to Filament admin auth
+Route::get('/login', function () {
+    return redirect()->route('filament.admin.auth.login');
+})->name('login');

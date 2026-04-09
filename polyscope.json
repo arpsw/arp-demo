@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "setup": [
+      "herd link",
+      "herd secure",
+      "herd isolate 8.4",
+      "DB_NAME=$(echo '{{folder}}' | tr '-' '_') && php -r '$db=$argv[1]; (new PDO(\"mysql:host=127.0.0.1\",\"root\",\"\"))->exec(\"CREATE DATABASE IF NOT EXISTS `$db`\");' -- $DB_NAME",
+      "sed -i '' \"s/^DB_DATABASE=.*/DB_DATABASE=$(echo '{{folder}}' | tr '-' '_')/\" .env",
+      "php artisan migrate:fresh --seed"
+    ],
+    "archive": [
+      "DB_NAME=$(echo '{{folder}}' | tr '-' '_') && php -r '$db=$argv[1]; (new PDO(\"mysql:host=127.0.0.1\",\"root\",\"\"))->exec(\"DROP DATABASE IF EXISTS `$db`\");' -- $DB_NAME",
+      "herd unsecure",
+      "herd unlink"
+    ]
+  },
+  "preview": {
+    "url": "https://{{folder}}.test"
+  }
+}

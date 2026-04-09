@@ -1,0 +1,4 @@
+web_extra_daemons:
+  - name: horizon
+    command: "php artisan horizon"
+    directory: /var/www/html
