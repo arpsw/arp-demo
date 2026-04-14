@@ -13,6 +13,7 @@
 /.zed
 /auth.json
 /node_modules
+**/node_modules
 /public/build
 /public/hot
 /public/storage
@@ -36,10 +37,4 @@ CLAUDE.md
 .copilot/
 composer.local.json
 
-# do not ignore: Project specific modules, eg. Modules/MyCustomModule
-Modules/Ai
-Modules/Cms
-Modules/Crm
-Modules/Hr
-
-
+Modules/Remote/

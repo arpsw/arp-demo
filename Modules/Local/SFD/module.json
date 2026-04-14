@@ -1,0 +1,11 @@
+{
+    "name": "SFD",
+    "alias": "sfd",
+    "description": "Shopfloor Demo module simulating manufacturing execution for Alpine Precision Bikes",
+    "keywords": ["sfd", "shopfloor", "manufacturing"],
+    "priority": 0,
+    "providers": [
+        "Modules\\SFD\\Providers\\SFDServiceProvider"
+    ],
+    "files": []
+}

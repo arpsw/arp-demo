@@ -1,0 +1,28 @@
+{
+    "name": "nwidart/sfd",
+    "description": "Shopfloor Demo module for manufacturing execution",
+    "authors": [
+        {
+            "name": "AgileDrop",
+            "email": "info@agiledrop.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SFD\\": "app/",
+            "Modules\\SFD\\Database\\Factories\\": "database/factories/",
+            "Modules\\SFD\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\SFD\\Tests\\": "tests/"
+        }
+    }
+}

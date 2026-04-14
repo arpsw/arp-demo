@@ -1,0 +1,28 @@
+{
+    "name": "nwidart/mnt",
+    "description": "Maintenance management module for equipment lifecycle and maintenance requests",
+    "authors": [
+        {
+            "name": "AgileDrop",
+            "email": "info@agiledrop.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MNT\\": "app/",
+            "Modules\\MNT\\Database\\Factories\\": "database/factories/",
+            "Modules\\MNT\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\MNT\\Tests\\": "tests/"
+        }
+    }
+}

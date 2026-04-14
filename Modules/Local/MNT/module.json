@@ -1,0 +1,11 @@
+{
+    "name": "MNT",
+    "alias": "mnt",
+    "description": "Maintenance management module for equipment lifecycle, preventive & corrective maintenance",
+    "keywords": ["mnt", "maintenance", "equipment"],
+    "priority": 0,
+    "providers": [
+        "Modules\\MNT\\Providers\\MNTServiceProvider"
+    ],
+    "files": []
+}
