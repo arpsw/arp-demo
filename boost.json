@@ -6,7 +6,5 @@
         "claude_code",
         "vscode"
     ],
-    "guidelines": [
-        "filament/filament"
-    ]
+    "guidelines": true
 }
