@@ -33,6 +33,7 @@ packages/
 /public/vendor
 
 CLAUDE.md
+AGENTS.md
 .claude/
 .copilot/
 composer.local.json
