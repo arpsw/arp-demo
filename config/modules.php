@@ -231,7 +231,7 @@ return [
         | This option for register lang file automatically.
         |
         */
-        'translations' => false,
+        'translations' => true,
 
     ],
 
